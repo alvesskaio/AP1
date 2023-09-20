@@ -1,12 +1,12 @@
-import random
-import sys
+import random 
+import sys # Utilizei o sys para encerrar o programa totalmente quando for aceita as condições
 
 while True: # O usuario ira definir o tamanho do dado, sendo 0 = tentar novamente, enter = sair
     tamanho_dos_dados = input('Forneça o tamanho do dado que será rolado (ENTER para sair): ')
 
     if tamanho_dos_dados == "":
         print('Programa encerrado..')
-        sys.exit()
+        sys.exit() #Atendendo ao proposto, ele encerrera todo o programa, interrompendo não apenas o loop, mas todo programa quando for uma string vazia.
 
     try:
         tamanho_dos_dados = float(tamanho_dos_dados)
