@@ -9,6 +9,6 @@
 
 👨🏽 Kaio Alves
 
-👱🏻‍♂️ Lucas De Vicq
+👱🏻‍♂️ Lucas de Vicq
 
-👩🏻Fernanda
+👩🏻 Fernanda
