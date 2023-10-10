@@ -43,8 +43,9 @@ def valores_random(lancamento, quantidade):  # Gerara os valores aleatorios de a
     return resultados
 
 def imprimir_valores(valores):
-    for valor in valores:
-        print('Lançamento - ',valor)
+    for indice, valores in enumerate(valores):
+        indice += 1
+        print(f'Lançamento {indice} - {valores}')
 
 numeros_de_lancamento = le_numero() # Agora pedimos o tamanho do dado
 
@@ -52,7 +53,7 @@ quantidade_dados = quantidade_de_dados() # O usuário irá definir quantos dados
 
 valores_aleatorios = valores_random(numeros_de_lancamento, quantidade_dados) # Gerar os valores aleatórios de acordo com a quantidade de dados desejados
 
-imprimir_valores(valores_aleatorios) # Imprimira os valores aleatorios
+imprimir_valores(valores_aleatorios) # Imprimira os valores
 
 print(f'{quantidade_dados} dado(s) de {numeros_de_lancamento} lados')
-print(*valores_aleatorios, sep=' ')  # Vi que esse "*" faz com que ele saia da tupla, pois antes estava indo em formato de listas...
+print(*valores_aleatorios, sep=' ')  # Documentação do "*" https://cursos.alura.com.br/forum/topico-outro-jeito-desempacotar-188298
